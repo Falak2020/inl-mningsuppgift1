@@ -1,0 +1,11 @@
+@import"../stadard.css";
+a ,a:visited{
+    color: #2BAAEC;
+}
+a:höver,a:active{
+ color: #25E6C8;
+}
+.flex-list{
+    display: flex;
+
+}
