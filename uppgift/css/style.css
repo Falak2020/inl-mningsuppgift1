@@ -1,26 +1,37 @@
 @import"../stadard.css";
-.flex-navbar{
-    display: flex;
-    margin: 0 1rem;
-    flex-direction: column;   
-}
 
-.flex-first{
+/*----Navbar Style------*/
+.flex-navbartop{
     display: flex;
     justify-content:space-between;  
     padding-left: 10rem;
     padding-right: 10rem;
     align-items: center;
+    height: 60px;
 }
-
+.border-bottom{
+     border-bottom:  1px solid #707070;
+    }
+.flex-navbarbottom
+{
+    display: flex;
+    justify-content:space-between;  
+    padding-left: 10rem;
+    padding-right: 10rem;
+    align-items: center;
+    height: 179px;
+}
 a ,a:visited{
     color: #2BAAEC;
     text-decoration: none;
 }
+
 a:hover,a:active{
  color: #25E6C8;
 }
-
+nav>div>div>i{
+    color: #2BAAEC;   
+}
 nav>div>ul{
     display: flex;
     list-style: none;  
@@ -31,7 +42,7 @@ nav>div>ul >li{
     padding: 0.75rem;
     
 }
-#secondlist>ul>li>a{
+#secondlist>div>ul>li>a{
     color:#363636;
 }
 .third-border{
@@ -46,21 +57,24 @@ nav>div>ul >li{
     background-color:white;
 }
 
-/*---Section-1----*/
+/*---Section-1 Style----------*/
 
 .first-section{
     display:flex;
-    margin: 0 1rem;
     justify-content: space-between;
     align-items: center;
     }
     .child-1{
         width:40%;
         margin-top: 55px;
-        margin-left: 5rem;
+        margin-left:7rem;
+        
     }
     .paragraph{
      width:40%;
+     margin-right: 5rem;
+    
+  
     }
     .button-1{
         background-color:#25E6C8 ;
@@ -70,51 +84,64 @@ nav>div>ul >li{
         height: 60px;
         width:239px;
         border-radius: 10px;
+        margin-top: 2rem;
     }
     h1{
         font-size: 50px;
         font-weight: 300;
         color: #363636;
     }
-  /*-----Sektion-2-----*/  
+  /*-----Sektion-2 Style-----*/  
 .second-section{
      display:flex;
-     margin:0 1rem;
-     justify-content:space-evenly;
+     justify-content:space-between;
     }
 
 .paragraph-1{
     margin-top:7rem;
     margin-left: 10rem;
-   
+    width:40%; 
 }
 .image{
     padding-right:10rem;
     margin-top:5rem ; 
+    width:40%;
   
 }
 #section-2>div>ul>li>h2{
     font-size: 40px;
     font-weight: 300;
     color: #2BAAEC;
+    margin-bottom: 0;
+    margin-top: 0.5rem;
 }
 #section-2>div>h1{
-    font-size: 40px;   
+    font-size: 40px;  
+    margin-bottom: 0rem; 
+}
+#section-2>div>hr{
+    height:3px;
+    border-width:0;
+    background-color:#25E6C8;
+    margin-bottom: 2rem;
+
 }
 .flex-list{
    display: flex; 
    list-style: none;
    justify-content:space-between;
-   margin-top:2.5rem;
-   width:578px;
-   padding-right: 7rem;
+    padding-left: 0;
+    padding-right:5rem;
+  }
+  span{
+      color:#2BAAEC;
   }
   /*--------Section-3--------------*/
   .fifth-border{
     border:1px solid gainsboro;
     height: 1349px;
     background-color: #F7F7F7;
-    margin:0 1rem;   
+    
 }
   #section-3>div>h2{
     margin-top: 5rem;
@@ -124,11 +151,17 @@ nav>div>ul >li{
      color:#363636 ;
      font-weight: 300;
 }
+#section-3>div>hr{
+    height:3px;
+    border-width:0;
+    background-color:#25E6C8;
+    margin-bottom: 2rem;
+    width:450px;
+}
 h3{
     font-size: 22px;
     color: #363636;
     font-weight: 300;
-
 }
 .image-background{
     width:100px;
@@ -162,9 +195,7 @@ h3{
 /*-----section-4-------*/
 .border-6{
     height: 220px;
-    background-color: #2BAAEC;
-    margin:0 1rem;
-    border: 1px  #DEDEDE;
+    background-color: #2BAAEC;  
 }
 .button-2{
     width:285px;
@@ -192,8 +223,17 @@ font-weight: 200;
     height:81px;
     background-color: #2ba5ec;
     font-size: 16px;
-    margin:0 1rem;
     text-align: center;
     padding:2rem 0;
     border: 1px  #2b78ec;
+    color:#ffffff9d; 
+}
+@media only screen and (max-width: 600px) {
+  nav>div>div{
+      display: none;
+      
+  }  
+  nav>div>ul>li{
+      
+}
 }
